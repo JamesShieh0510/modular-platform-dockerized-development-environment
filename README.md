@@ -29,7 +29,7 @@ https://hub.docker.com/editions/community/docker-ce-desktop-windows
 ##Step 2:加入Laradock
 
 ```
-git submodule add --force https://github.com/JamesShieh0510/laradock.git
+git submodule add --force https://github.com/JamesShieh0510/modular-platform-dockerized-development-environment.git
 ```
 
 ##Step 3:啟動Laradock
