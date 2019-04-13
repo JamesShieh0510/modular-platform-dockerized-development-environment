@@ -35,7 +35,7 @@ git submodule add --force https://github.com/JamesShieh0510/modular-platform-doc
 ##Step 3:啟動Laradock
 
 ```
-cd laradock
+cd modular-platform-dockerized-development-environment
 . ./start.sh
 ```
 
