@@ -46,5 +46,8 @@ cd modular-platform-dockerized-development-environment
 . ./stop.sh 
 #重新載入資料庫
 ../update-database.sh
+#更新submodule
+git submodule foreach --recursive git pull origin master
+
 ```
 
