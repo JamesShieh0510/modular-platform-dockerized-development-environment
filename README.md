@@ -55,6 +55,10 @@ cd modular-platform-dockerized-development-environment
 ```
 . ./start.sh
 ```
+更新並重新部署Larevel Project
+```
+docker exec -it laradock_workspace_1 composer install
+```
 重新載入資料庫（更新SQL時使用)
 ```
 ../update-database.sh
@@ -63,4 +67,6 @@ cd modular-platform-dockerized-development-environment
 ```
 git submodule foreach --recursive git pull origin master
 ```
+
+
 

@@ -1,2 +1,3 @@
- docker-compose stop
- mv ../.env.old ../.env
+docker kill $(docker ps -q)
+
+mv ../.env.old ../.env
