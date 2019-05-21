@@ -1,4 +1,12 @@
 
+# make sure all container is stop and .env return to the original setting
+. ./stop.sh
+
+if [ -f "./docker-worker/stop.sh" ]
+then
+    cd ./docker-worker
+fi
+
 # get environment variable from docker .env
 export  $(cat .env | grep -w DATA_PATH_HOST | awk '{ print $1}')
 export  $(cat .env | grep -w MYSQL_DATABASE | awk '{ print $1}')
@@ -36,3 +44,5 @@ echo "DATA_PATH:$DATA_PATH_HOST"
 echo "Database Info:"
 echo "USER:$MYSQL_USER"
 echo "PASSWORD:$MYSQL_PASSWORD"
+
+cd ..
