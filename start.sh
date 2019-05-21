@@ -1,10 +1,11 @@
-
 # make sure all container is stop and .env return to the original setting
-. ./stop.sh
-
 if [ -f "./modular-platform-dockerized-development-environment/stop.sh" ]
 then
     cd ./modular-platform-dockerized-development-environment
+    . ./stop.sh
+    cd ./modular-platform-dockerized-development-environment
+else
+    . ./stop.sh
 fi
 
 # get environment variable from docker .env
